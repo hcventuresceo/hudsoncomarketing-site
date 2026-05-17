@@ -33,8 +33,8 @@ export default function App() {
     return (
       <>
         <SEO 
-          title="Book Your Call | Hudson & Co Marketing"
-          description="Schedule your strategy call with Hudson & Co Marketing. Let's discuss your growth goals."
+          title="Book a Growth Systems Call | Hudson & Co. Ventures"
+          description="Schedule a strategy call with Hudson & Co. Ventures to discuss revenue operations, acquisition systems, and GTM execution for your founder-led business."
           path="/booking"
         />
         <StructuredData />
@@ -47,8 +47,8 @@ export default function App() {
     return (
       <>
         <SEO 
-          title="Early-Stage Founders | Hudson & Co Marketing"
-          description="Growth execution for early-stage founders under $100K revenue."
+          title="Early-Stage Founders | Hudson & Co. Ventures"
+          description="Growth systems and acquisition execution for early-stage founders building toward predictable revenue."
           path="/early-stage"
         />
         <StructuredData />
@@ -61,8 +61,8 @@ export default function App() {
     return (
       <>
         <SEO 
-          title="Services | Hudson & Co Marketing - Growth Execution & GTM Strategy"
-          description="Expert paid ads, lead generation, revenue operations, and GTM strategy for founder-led businesses."
+          title="Services | Hudson & Co. Ventures - Revenue Operations & GTM Systems"
+          description="Revenue operations, acquisition systems, paid media, lead generation, CRM infrastructure, and GTM strategy for founder-led businesses."
           path="/services"
         />
         <StructuredData />
@@ -75,8 +75,8 @@ export default function App() {
     return (
       <>
         <SEO 
-          title="Case Studies | Hudson & Co Marketing - Real Results for Real Businesses"
-          description="See how we've helped founder-led businesses achieve 45× view increases, 4× CPA decreases, and $2M+ in revenue."
+          title="Case Studies | Hudson & Co. Ventures - Growth Systems Results"
+          description="See how Hudson & Co. Ventures helps founder-led businesses build acquisition systems, improve pipeline quality, and turn demand into booked revenue."
           path="/case-studies"
         />
         <StructuredData />
@@ -89,8 +89,8 @@ export default function App() {
     return (
       <>
         <SEO 
-          title="About | Hudson & Co Marketing - Execution-First Growth Partners"
-          description="Meet the team behind Hudson & Co Marketing. Senior-level marketers who've scaled businesses from zero to millions."
+          title="About | Hudson & Co. Ventures - Execution-First Growth Partners"
+          description="Meet the team behind Hudson & Co. Ventures, an execution-first revenue operations and growth systems firm for founder-led businesses."
           path="/about"
         />
         <StructuredData />

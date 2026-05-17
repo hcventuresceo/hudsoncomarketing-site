@@ -8,11 +8,13 @@ interface SEOProps {
 }
 
 export function SEO({ 
-  title = "Hudson & Co Marketing | Growth Execution for Founder-Led Businesses",
-  description = "Senior-level growth execution and C-level GTM strategy for service-based businesses and funded startups. Expert paid ads, lead generation, and revenue operations that drive measurable results.",
+  title = "Hudson & Co. Ventures Holdings LLC | Revenue Operations & Growth Systems",
+  description = "Hudson & Co. Ventures is a revenue operations and growth systems firm for founder-led businesses. Senior-level execution, C-level GTM strategy, and acquisition systems that turn demand into booked revenue predictably.",
   path = "/",
-  image = "/og-image.jpg"
+  image = "/og-image.png"
 }: SEOProps) {
+  const baseUrl = 'https://www.hudsoncomarketing.com';
+  const siteName = 'Hudson & Co. Ventures';
   
   useEffect(() => {
     // Update document title
@@ -38,22 +40,25 @@ export function SEO({
     
     // Open Graph
     updateMetaTag('og:type', 'website', true);
-    updateMetaTag('og:url', `https://hudsoncomarketing.com${path}`, true);
+    updateMetaTag('og:url', `${baseUrl}${path}`, true);
     updateMetaTag('og:title', title, true);
     updateMetaTag('og:description', description, true);
-    updateMetaTag('og:image', `https://hudsoncomarketing.com${image}`, true);
-    updateMetaTag('og:site_name', 'Hudson & Co Marketing', true);
+    updateMetaTag('og:image', `${baseUrl}${image}`, true);
+    updateMetaTag('og:image:width', '1200', true);
+    updateMetaTag('og:image:height', '630', true);
+    updateMetaTag('og:image:alt', 'Hudson & Co. Ventures crest and brand mark', true);
+    updateMetaTag('og:site_name', siteName, true);
     
     // Twitter
     updateMetaTag('twitter:card', 'summary_large_image');
-    updateMetaTag('twitter:url', `https://hudsoncomarketing.com${path}`);
+    updateMetaTag('twitter:url', `${baseUrl}${path}`);
     updateMetaTag('twitter:title', title);
     updateMetaTag('twitter:description', description);
-    updateMetaTag('twitter:image', `https://hudsoncomarketing.com${image}`);
+    updateMetaTag('twitter:image', `${baseUrl}${image}`);
     
     // Additional SEO
-    updateMetaTag('keywords', 'growth marketing, paid ads, lead generation, GTM strategy, revenue operations, B2B marketing, SaaS marketing, founder-led businesses, marketing agency');
-    updateMetaTag('author', 'Hudson & Co Marketing');
+    updateMetaTag('keywords', 'revenue operations, growth systems, GTM strategy, founder-led businesses, acquisition systems, lead generation, paid ads, CRM systems, Hudson & Co Ventures');
+    updateMetaTag('author', 'Hudson & Co. Ventures Holdings LLC');
     
     // Canonical URL
     let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement;
@@ -62,7 +67,7 @@ export function SEO({
       canonical.rel = 'canonical';
       document.head.appendChild(canonical);
     }
-    canonical.href = `https://hudsoncomarketing.com${path}`;
+    canonical.href = `${baseUrl}${path}`;
     
   }, [title, description, path, image]);
 
